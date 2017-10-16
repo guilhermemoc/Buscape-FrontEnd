@@ -1,0 +1,132 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f3f3f3;
+  font-size: 16px;
+}
+#app {
+  padding-top: 90px;
+}
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: #ffcd00;
+  z-index: 100;
+}
+.logo {
+  padding: 10px 0 5px 17px;
+}
+.cartToggleLabel {
+  position: absolute;
+  top: 27px;
+  right: 27px;
+  font-size: 2rem;
+  font-weight: 900;
+  padding-left: 1.25em;
+}
+.cartToggleLabel:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1em;
+  height: 0.125em;
+  border-top: 0.375em double #000;
+  border-bottom: 0.125em solid #000;
+}
+.cartToggleLabel:after {
+  content: attr(data-cart-qty);
+  position: absolute;
+  top: 9px;
+  left: -12.5px;
+  display: inline-block;
+  width: 25.5px;
+  height: 25.5px;
+  border-radius: 50%;
+  background-color: #d62a33;
+  color: white;
+  font-size: 1.3rem;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 25.5px;
+}
+#cartToggle, .cart {
+  display: none;
+}
+#cartToggle:checked + .cart {
+  display: block;
+}
+.cart__footer {
+  text-align: right;
+  padding: 30px 20px;
+  font-weight: 700;
+}
+.cart__footer h2 {
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+}
+.cart__footer .installments, .cart__footer .cash {
+  line-height: 1.5em;
+}
+.cart__footer .installments {
+  padding-top: 15px;
+}
+.ui.products {
+  margin: 10px 7px;
+}
+.ui.products .product + .product {
+  margin-top: 10px;
+}
+body .font-default {
+  color: #444;
+}
