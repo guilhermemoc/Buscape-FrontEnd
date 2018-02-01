@@ -2,7 +2,7 @@
   "name": "buscape-company-exercicios-frontend",
   "version": "1.0.0",
   "description": "Um exercicio para a Buscape Company ;)",
-  "author": "Joao Bueno <joaobbn@gmail.com>",
+  "author": "Guilherme Martins <adm.gms@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
